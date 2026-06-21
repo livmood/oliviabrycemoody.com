@@ -49,3 +49,10 @@ a:visited {
   border: 0 none;
   box-sizing: border-box;
 }
+
+.ec {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
