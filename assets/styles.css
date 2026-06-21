@@ -5,11 +5,11 @@ main {
 }
 
 a {
-  color: blue;
+  color: rgba(0, 119, 204, 0.5);
 }
 
 a:visited {
-  color: blue;
+  color: rgba(0, 119, 204, 0.5);
 }
 
 .nav-bar {
