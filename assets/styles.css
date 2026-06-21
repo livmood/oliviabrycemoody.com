@@ -4,6 +4,14 @@ main {
   padding: 0 20px;
 }
 
+a {
+  color: blue;
+}
+
+a:visited {
+  color: blue;
+}
+
 .nav-bar {
   margin-bottom: 2rem;
   display: flex;
