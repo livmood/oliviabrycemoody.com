@@ -50,9 +50,17 @@ a:visited {
   box-sizing: border-box;
 }
 
+.ec-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
 .ec {
-  display: block;
+  max-width: 250px;
   width: 100%;
-  max-width: 300px;
   height: auto;
+  object-fit: cover;
+  flex: 1 1 200px;
 }
