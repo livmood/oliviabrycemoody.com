@@ -1,27 +1,102 @@
+:root {
+  --magenta-primary-accent: #D9327E; /* also used for pink-purple gradient */
+  --plum-primary-text: #3A1747; /* use 70% opacity for footer*/
+  --purple-secondary-text: #734D6E;
+  --peach-button-text: #FFA17B;
+  --bright-purple-link: #7A3FB8; /* also used for purple-pink gradient */
+  --tan-secondary-button-text: #FFF6DB; /* first stop in linear gradient */
+  --sunshine: #FFD66B; /* second stop in linear gradient */
+  --peach-bgrd: #FFB88C; /* third stop in linear gradient */
+  --white: #FFFFFF;
+}
+
+.name {
+  font-family: "Fredericka the Great", serif;
+  font-size: 80px;
+  font-weight: 92;
+  color: var(--magenta-primary-accent);
+}
+
+nav {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  min-width: 100vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  font-family: "DM Sans";
+  color: var(--plum-primary-text);
+}
+
+.hero-image {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.sub-hero-text {
+  font-family: "DM Sans";
+  color: var(--purple-secondary-text);
+}
+
+h2 {
+  font-family: "Frauces";
+  font-size: 80px;
+  color: var(--plum-primary-text);
+}
+
+h1 {
+  margin: 0;
+  align-self: flex-start;
+  font-family: "Fredericka the Great", serif;
+  font-size: 26px;
+  font-weight: 92;
+  color: var(--plum-primary-text);
+}
+
+body {
+  display:flex;
+  flex-direction:column;
+  background-image: linear-gradient(var(--tan-secondary-button-text), var(--sunshine), var(--peach-bgrd));
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
 main {
+  flex-grow: 1;
   max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 a {
-  color: rgba(0, 119, 204, 0.5);
+  color: var(--bright-purple-link);
 }
 
 a:visited {
-  color: rgba(0, 119, 204, 0.5);
+  color: var(--plum-primary-text);
 }
 
-.nav-bar {
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  text-align: right
-}
 
 .nav-bar-link {
+  justify-content: flex-end;
   margin-left: .75rem;
   color: rgba(0, 119, 204, 0.5);
 }
