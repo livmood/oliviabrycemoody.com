@@ -43,6 +43,15 @@ nav {
   max-width: 900px;
 }
 
+footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: 900px;
+  color: rgba(58, 23, 71, 0.25);
+}
+
 .hero-text {
   display: flex;
   flex-direction: column;
