@@ -10,9 +10,25 @@
   --white: #FFFFFF;
 }
 
+button {
+  transition: transform 0.1s, box-shadow 0.1s;
+  padding: 10px;
+  border: none;
+  background-color: var(--sunshine);
+  color: var(--plum-primary-text);
+  border-radius: 999px;
+  box-shadow: 0 6px 0 #A36A22, 0 16px 28px rgba(58, 23, 71, 0.25);
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(4px);
+  box-shadow: 0 4px 0 #A36A22, 0 16px 28px rgba(58, 23, 71, 0.25);
+}
+
 .name {
   font-family: "Fredericka the Great", serif;
-  font-size: 80px;
+  font-size: 50px;
   font-weight: 92;
   color: var(--magenta-primary-accent);
 }
@@ -36,10 +52,33 @@ nav {
 }
 
 .hero-image {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  flex: 1;
+  flex: none;
+}
+
+.hero-image::before {
+  z-index: 0;
+  content: "";
+  top: 20px;
+  border-radius: 10px;
+  left: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to left, var(--magenta-primary-accent), var(--bright-purple-link));
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+li {
+  color: var(--magenta-primary-accent);
 }
 
 .sub-hero-text {
@@ -48,9 +87,26 @@ nav {
 }
 
 h2 {
-  font-family: "Frauces";
-  font-size: 80px;
+  font-family: "Fraunces-light", serif;
+  font-size: 50px;
   color: var(--plum-primary-text);
+}
+
+.cta {
+  z-index: 0;
+  content: "";
+  border-radius: 10px;
+  padding: 20px;
+  left: 20px;
+  top: 20px;
+  position: relative;
+  background-image: linear-gradient(to left, var(--bright-purple-link), var(--magenta-primary-accent));
+}
+
+.cta-text {
+  position: relative;
+  font-family: "Fraunces", serif;
+  color: var(--tan-secondary-button-text);
 }
 
 h1 {
@@ -76,7 +132,11 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  gap: 96px;
   width: 100%;
+  padding: 20px;
+  margin-bottom: 40px;
 }
 
 main {
@@ -101,17 +161,16 @@ a:visited {
   color: rgba(0, 119, 204, 0.5);
 }
 
-.profile-image-container {
-  float: right;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
 .profile-image {
+  position: relative;
   display: block;
   max-width: 300px;
   width: 100%;
   height: auto;
+  border-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  box-shadow: 4px 6px 0 var(--plum-primary-text), 0 16px 28px rgba(58, 23, 71, 0.25);
 }
 
 .frame {
